@@ -1,0 +1,9 @@
+/.metadata/
+/.recommenders/
+.classpath
+.project
+.gradle/
+.settings/
+build/
+bin/
+resources/wallet.properties

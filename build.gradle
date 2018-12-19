@@ -1,0 +1,17 @@
+apply plugin: 'java'
+apply plugin: 'eclipse'
+
+sourceSets {
+    main.java.srcDirs = ['src']
+    main.resources.srcDirs = ['resources']
+}
+
+repositories {
+	jcenter()
+}
+
+dependencies {
+    compile 'edu.wpi.rail:jrosbridge:0.2.0'
+    compile 'org.iota:jota:1.0.0-beta2'
+    compile 'org.slf4j:slf4j-simple:1.7.25'
+}
