@@ -19,7 +19,9 @@ https://medium.com/topocare-x-iota
 
 The repositiory contains the java project which is described in the article. 
 
-wallet_template.properties: Is a config  file. 
-1) An IOTA seed has to be inserted (machines wallet)
-2) A receiving address, where the IOTA token shall be transfered when a production step is achieved
+First step:
+wallet_template.properties: Is a template config  file. 
+1) copy file, rename the copy to wallet.properties
+2) Insert an IOTA seed (machines wallet)
+2) Insert a payment address, where the IOTA token shall be received when a production step is achieved
 
