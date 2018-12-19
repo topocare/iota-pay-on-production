@@ -23,5 +23,5 @@ First step:
 wallet_template.properties: Is a template config  file. 
 1) copy file, rename the copy to wallet.properties
 2) Insert an IOTA seed (machines wallet)
-2) Insert a payment address, where the IOTA token shall be received when a production step is achieved
-
+3) Insert an outputAddress, where the IOTA token shall be received when a production step is achieved
+4) Insert a returnAddress, where unspend token are send in return 
