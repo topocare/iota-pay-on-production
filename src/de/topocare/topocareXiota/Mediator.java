@@ -79,6 +79,9 @@ public class Mediator {
 		this.ros = ros;
 		bindingCallbacks_ros();
 		bindConsumer_iota();
+		
+		//get state of wallet at constructor time
+		checkMachineUnlock(iota.walletState);
 	}
 
 	/**
