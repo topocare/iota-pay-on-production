@@ -1,5 +1,6 @@
 apply plugin: 'java'
 apply plugin: 'eclipse'
+apply plugin: 'application'
 
 sourceSets {
     main.java.srcDirs = ['src']
@@ -14,4 +15,16 @@ dependencies {
     compile 'edu.wpi.rail:jrosbridge:0.2.0'
     compile 'org.iota:jota:1.0.0-beta2'
     compile 'org.slf4j:slf4j-simple:1.7.25'
+}
+
+mainClassName = 'de.topocare.topocareXiota.Main'
+version = '1.0.0'
+
+jar {
+    manifest {
+        attributes 'Implementation-Title': 'topocareXiota',
+                   'Implementation-Version': version,
+                   'Main-Class': mainClassName,
+                   'Class-Path': configurations.runtime.files.collect {"$it.name"}.join(' ')
+    }
 }
